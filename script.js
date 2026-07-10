@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // If valid, show success message
             if (isValid) {
+                alert('Your details have been submitted');
                 contactForm.style.display = 'none';
                 successMessage.classList.add('show');
 
@@ -309,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subscribeBtn.addEventListener('click', function () {
             var emailValue = footerEmail.value.trim();
             if (emailValue && isValidEmail(emailValue)) {
-                alert('Thank you for subscribing!');
+                alert('You have subscribed');
                 footerEmail.value = '';
             } else {
                 alert('Please enter a valid email address.');
